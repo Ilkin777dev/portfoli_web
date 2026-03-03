@@ -1,9 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+*/
+/* 
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main_wrapper {
+body {
+    background-color: #F5F5F0;
+}
+
+.hero_screen {
+    height: 100vh;
+    padding-top: 20px;
     border: 1px dotted red;
+}
+
+.desk_header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1.5px solid #1F2937;
+}
+
+.desk_header_left {
+    width: 30%;
+}
+
+.desk_header_middle {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desk_header_middle ul li {
+    display: inline;
+    list-style: none;
+}
+
+.desk_header_middle ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.desk_header_middle ul li a {
+    color: #1F2937;
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.desk_header_middle ul li a:hover {
+    color: #3E43B5;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.desk_header_right {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.desk_header_right a button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #F5F5F0;
+    background: #3E43B5;
+    font-size: 1.1vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+
+.desk_header_right a button:hover {
+    cursor: pointer;
+    background: none;
+    color: #3E43B5;
+    border: 2px solid #3E43B5;
 }
