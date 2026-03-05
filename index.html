@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Ilkin Karimli - Software Engineer</title>
 </head>
 
@@ -17,17 +18,46 @@
                 </div>
                 <div class="desk_header_middle">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#about_sec">About</a></li>
                         <li>•</li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#skills_sec">Skills</a></li>
                         <li>•</li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="#projects_sec">Projects</a></li>
                     </ul>
                 </div>
                 <div class="desk_header_right">
-                    <a href="#"><button>Contact</button></a>
+                    <a href="#contact_sec"><button>Contact</button></a>
                 </div>
             </div>
+        </div>
+
+        <div class="mobile_header_wrapper">
+            <div class="mobile_header">
+                <div class="mobile_left">
+                    <img src="assets/logo.svg" alt="" />
+                </div>
+                <div class="mobile_right">
+                    <button class="menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_links_wrapper">
+            <ul>
+                <li><a href="#about_sec">About</a></li>
+                <li><a href="#skills_sec">Skills</a></li>
+                <li><a href="#projects_sec">Projects</a></li>
+            </ul>
         </div>
 
         <!-- Preview Section -->
@@ -43,17 +73,17 @@
                             <p>SOFTWARE ENGINEER.</p>
                         </div>
                         <div class="preview_spec_desc">
-                            <p>4+ years of professional experience in product development.</p>
+                            <p>4+ years of professional experience in software engineering.</p>
                         </div>
                     </div>
         
                     <div class="preview_buttons_wrapper">
                         <div class="preview_buttons">
                             <div class="cv_buttons">
-                                <a href="#"><button><img src="assets/file-download.svg" alt="CV">Download my resume</button></a>
+                                <a href="resume/Karimli_SWE_resume.docx" download><button><img src="assets/file-download.svg" alt="CV">Download my resume</button></a>
                             </div>
                             <div class="prev_cont_button">
-                                <a href="#"><button><img src="assets/comment-alt.svg" alt="comment">Let's discuss your project</button></a>
+                                <a href="#contact_sec"><button><img src="assets/comment-alt.svg" alt="comment">Let's discuss your project</button></a>
                             </div>
                         </div>
                     </div> 
@@ -66,20 +96,20 @@
                             </div>
                             <div class="image_text">
                                 <ul>
-                                    <li><a href="#">Why me?</a></li>
-                                    <li><a href="#">Skills</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Contact me</a></li>
+                                    <li><a href="#about_sec">Why me?</a></li>
+                                    <li><a href="#skills_sec">Skills</a></li>
+                                    <li><a href="#projects_sec">Projects</a></li>
+                                    <li><a href="#contact_sec">Contact me</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="preview_links">
                             <ul>
                                 <li>
-                                    <img src="assets/github.svg" alt="github"><a href="#">ilkin_777</a>
+                                    <img src="assets/github.svg" alt="github"><a href="https://github.com/Ilkin777dev?tab=overview&from=2026-03-01&to=2026-03-06" target="_blank">ilkin_777</a>
                                 </li>
                                 <li>
-                                    <img src="assets/linkedin-in.svg" alt="linkedin"><a href="#">ilkin_karimli</a>
+                                    <img src="assets/linkedin-in.svg" alt="linkedin"><a href="https://www.linkedin.com/in/ilkin-kerimli-719211203/https://www.linkedin.com/in/ilkin-kerimli-719211203/" target="_blank">ilkin_karimli</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,7 +121,7 @@
 
     <!-- About Section  -->
 
-    <div class="about_section_wrapper">
+    <div class="about_section_wrapper" id="about_sec">
         <div class="about_section">
             <div class="about_title">
                 <h1>WHY CHOOSE ME?</h1>
@@ -109,7 +139,7 @@
                     My technical decisions are backed by a strong academic background in Computer Science:
                 <ul style="padding-left: 20px; margin-bottom: 20px;">
                     <li>
-                        <p>Double Bachelor’s Degree (B.Sc.) — Dual bachelor ddegree program between Baku State University
+                        <p>Double Bachelor’s Degree (B.Sc.) — Dual bachelor degree program between Baku State University
                             and Holon Institute of Technology (HIT).</p>
                     </li>
                     <li>
@@ -129,7 +159,7 @@
                     <b>Skills :</b>
                 </p>
             </div>
-            <div class="about_skills_wrapper">
+            <div class="about_skills_wrapper" id="skills_sec">
                 <div class="about_skills_row">
     
                     <div class="container">
@@ -261,7 +291,7 @@
 
     <!-- Projects -->
 
-    <div class="projects_section_wrapper">
+    <div class="projects_section_wrapper" id="projects_sec">
         <div class="projects_section">
             <div class="projects_title">
                 <h1>Projects</h1>
@@ -444,7 +474,7 @@
         </div>
     </div>
 
-    <div class="contact_form_wrapper">
+    <div class="contact_form_wrapper" id="contact_sec">
         <div class="contact_form">
             <div class="contact_title">
                 <h1>Contact me</h1>
@@ -482,13 +512,13 @@
                 <div class="preview_links">
                     <ul>
                         <li>
-                            <img src="assets/github.svg" alt="github"><a href="#">ilkin_777</a>
+                            <img src="assets/github.svg" alt="github"><a href="https://github.com/Ilkin777dev?tab=overview&from=2026-03-01&to=2026-03-06" target="_blank">ilkin_777</a>
                         </li>
                         <li>
-                            <img src="assets/linkedin-in.svg" alt="linkedin"><a href="#">ilkin_karimli</a>
+                            <img src="assets/linkedin-in.svg" alt="linkedin"><a href="https://www.linkedin.com/in/ilkin-kerimli-719211203/" target="_blank">ilkin_karimli</a>
                         </li>
                         <li>
-                            <img src="assets/phone.svg" alt="phone"><a href="#">+994-55-277-03-43</a>
+                            <img src="assets/phone.svg" alt="phone"><a href="tel:+994552770343git ">+994-55-277-03-43</a>
                         </li>
                     </ul>
                 </div>
@@ -499,7 +529,9 @@
         </div>
     </div>
 
-
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
